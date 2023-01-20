@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    margin: 30px auto 10px;
+    text-align: center;
+    font-size: 2.8rem;
+}
+
+.page {
+    height: 90vh;
+}
+
+#aside {
+    color: #FCAC45;
+    height: 70%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    left: -185px;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding: 20px 0;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+#aside:hover {
+    left: 0px;
+}
+
+#navBtn {
+    display: block;
+    color: #fff;
+    position: absolute;
+    transform: rotate(90deg);
+    width: 185%;
+    top: 18%;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+button {
+    display: none;
+}
+
+nav {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#aside ul {
+    margin: 0 30px;
+    list-style: none;
+}
+
+#aside ul li {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.3rem
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #FCAC45;
+}
+
+footer {
+    font-size: 1.1rem;
+}
+
+main {
+    margin-left: 25px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    grid-gap: 80px;
+}
+
+.item {
+    display: grid;
+    width: 80%;
+    justify-self: center;
+}
+
+img {
+    width: 65%;
+    justify-self: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 555px) {
+    header {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    button {
+        color: #FCAC45;
+        background-color: #333;
+        text-align: center;
+        width: 100%;
+        height: 60px;
+        border: none;
+        display: block;
+        font-size: 1.3rem;
+    }
+
+    #aside {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        z-index: 0;
+        left: 0px;
+        overflow-x: auto;
+        transition: 0;
+        padding: 20px 0;
+        border-bottom-right-radius: 30px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 30px;
+    }
+
+    #navBtn {
+        visibility: hidden;
+    }
+
+    #aside ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    #nav,
+    .hide {
+        display: none;
+    }
+
+    #welcome,
+    #footer {
+        grid-column: 1/span 2;
+    }
+
+    #aside ul li {
+        font-size: 1.2rem
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+
+    main {
+        margin-left: 0px;
+        padding: 30px;
+        grid-gap: 50px;
+    }
+
+    .item {
+        width: 85%;
+    }
+    
+    img{
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .show {
+        display: block;
+    }
+}
